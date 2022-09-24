@@ -13,10 +13,10 @@ services:
       - DB_NAME=nc_tutorials_db
       - DB_USER=postgres
       - DB_PASSWORD=admin123
-      - DB_HOST= nctutorials.cww6glto1ugj.us-west-2.rds.amazonaws.com #YOUR_DB_ENDPOINT_HERE
+      - DB_HOST=nctutorials.cww6glto1ugj.us-west-2.rds.amazonaws.com #YOUR_DB_ENDPOINT_HERE
       - DB_PORT=5432
       - DATABASE=postgres
-      - VIRTUAL_HOST= ec2-34-223-246-237.us-west-2.compute.amazonaws.com #YOUR_EC2_INSTANCE_DNS_HERE
+      - VIRTUAL_HOST=ec2-34-223-246-237.us-west-2.compute.amazonaws.com #YOUR_EC2_INSTANCE_DNS_HERE
       - VIRTUAL_PORT=8000
   nginx:
     build: ./nginx
